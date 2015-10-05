@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  MyBook
+//
+//  Created by qf on 15/9/19.
+//  Copyright (c) 2015年 朱明. All rights reserved.
+//
+
+#ifndef MyBook_PrefixHeader_pch
+#define MyBook_PrefixHeader_pch
+
+#import "AppDelegate.h"
+#import "UIImageView+WebCache.h"
+
+
+CG_INLINE CGRect
+CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
+{
+	AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+	CGRect rect;
+	rect.origin.x = x * myDelegate.autoSizeScaleX;
+	rect.origin.y = y * myDelegate.autoSizeScaleY;
+	
+	rect.size.width = width * myDelegate.autoSizeScaleX;
+	rect.size.height = height * myDelegate.autoSizeScaleY;
+	return rect;
+}
+/*
+ #define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
+ #define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
+ #define VProportionImg  ScreenHeight/667//UI设计以6的屏幕为参考
+ #define HProportionImg  ScreenWidth/375
+ 
+ - (void)demo
+ {
+ 
+ UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 200*VProportionImg)];
+ 
+ UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+ btn1.frame = CGRectMake(0, CGRectGetMaxY(imageView.frame)+20*VProportionImg, ScreenWidth/3.0, 30*VProportionImg);
+ 
+ UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+ btn2.frame = CGRectMake(CGRectGetMaxX(btn1.frame), CGRectGetMaxY(imageView.frame)+20*VProportionImg, ScreenWidth/3.0, 30*VProportionImg);
+ 
+ UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
+ btn3.frame = CGRectMake(CGRectGetMaxX(btn2.frame), CGRectGetMaxY(imageView.frame)+20*VProportionImg, ScreenWidth/3.0, 30*VProportionImg);
+ }
+ */
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

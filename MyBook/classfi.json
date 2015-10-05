@@ -1,0 +1,51 @@
+{
+  "showapi_res_body" : {
+    "bookClass" : [
+      {
+        "id" : "1",
+        "name" : "孕妇育儿图书"
+      },
+      {
+        "id" : "2",
+        "name" : "美容时尚图书"
+      },
+      {
+        "id" : "3",
+        "name" : "健康养生图书"
+      },
+      {
+        "id" : "4",
+        "name" : "两性生活图书"
+      },
+      {
+        "id" : "5",
+        "name" : "美食烹饪图书"
+      },
+      {
+        "id" : "6",
+        "name" : "修养心里图书"
+      },
+      {
+        "id" : "7",
+        "name" : "家庭教育图书"
+      },
+      {
+        "id" : "8",
+        "name" : "幽默笑话图书"
+      },
+      {
+        "id" : "9",
+        "name" : "生活杂谈图书"
+      },
+      {
+        "id" : "10",
+        "name" : "其它图书"
+      }
+    ],
+    "flag" : true,
+    "ret_code" : 0,
+    "success" : true
+  },
+  "showapi_res_code" : 0,
+  "showapi_res_error" : ""
+}
